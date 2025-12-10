@@ -1,0 +1,226 @@
+/* CSS from your FAQ.css file */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section with Background */
+.faq-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/ShopInfo/ShopImage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.faq-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 20px;
+}
+
+.faq-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #FFD700;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+.faq-hero p {
+    font-size: 1.3rem;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+    border-bottom: 3px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.accordion {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    margin: 0;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 25px;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.accordion-button:hover {
+    background-color: #fffaf0;
+    color: #FFD700;
+}
+
+.accordion-button.active {
+    background-color: #FFD700;
+    color: #1a1a1a;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Bootstrap Icon Style */
+.accordion-button img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.active img {
+    transform: rotate(180deg);
+}
+
+.accordion-collapse {
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    max-height: 0;
+}
+
+.accordion-collapse.show {
+    max-height: 800px;
+    transition: max-height 0.6s ease-in;
+}
+
+.accordion-body {
+    padding: 20px 25px 30px 25px;
+    font-size: 1rem;
+    color: #444;
+    background-color: #fcfcfc;
+    border-radius: 0 0 8px 8px;
+}
+
+.accordion-body ul {
+    list-style: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.accordion-body ul li {
+    margin-bottom: 5px;
+}
+
+.accordion-body p {
+    margin-bottom: 10px;
+}
+
+header.scrolled {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .faq-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .faq-hero p {
+        font-size: 1rem;
+    }
+
+    .faq-hero {
+        min-height: 40vh;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+
+    .faq-section {
+        padding: 60px 15px;
+    }
+}

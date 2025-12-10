@@ -1,0 +1,172 @@
+/*========================================
+    BASE STYLES
+========================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/*========================================
+    HERO SECTION
+========================================*/
+
+#hero {
+    background: url("../Images/backgroundImage/vivo\ contact\ us\ bg.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    padding: 0 4rem 8rem 4rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#hero h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+#hero p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+    background: #FFD700;
+    color: #333;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+.cta-button:hover {
+    background: #FFC700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+}
+
+
+/*========================================
+    FEATURES SECTION
+========================================*/
+
+#features {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #f0f0f5);
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    flex-basis: 30%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    background-color: white;
+}
+
+/* Feature Icons */
+.feature-item i {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.feature-item svg {
+    width: 50px;
+    height: 50px;
+    color: #FFD700;
+    fill: #FFD700;
+    margin-bottom: 1rem;
+}
+
+/* Image icons (SVG files referenced via <img>)
+    Some feature icons are loaded with <img src="...svg"> —
+    use size + filter so they appear slightly larger and yellow.
+*/
+.feature-item img {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto 1rem;
+    /* colorize SVG images roughly to yellow using filter */
+    filter: invert(82%) sepia(81%) saturate(583%) hue-rotate(1deg) brightness(1) contrast(1);
+}
+
+.feature-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Reviews Button */
+.reviews-button {
+    background: #FFD700;
+    color: #333;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+.reviews-button:hover {
+    background: #FFC700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+}

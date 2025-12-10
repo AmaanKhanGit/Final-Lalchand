@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Rama Mobile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/header-footer.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/FAQ.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Rama Mobile</div>
+
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="latestSmartPhone.html">Latest Smartphone</a></li>
+                <li><a href="referbishedPhone.html">Refurbished Phone</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="menu-backdrop" id="menuBackdrop" onclick="toggleMenu()"></div>
+    </header>
+
+    <section class="faq-hero">
+        <div class="faq-hero-content">
+            <h1>Got Questions? We've Got Answers!</h1>
+            <p>Find everything you need to know about our services, repairs, warranties, and more</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions (FAQ)</h2>
+
+        <div class="accordion" id="ramaMobileFAQ">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">
+                        <span>What mobile repair services do you provide?</span>
+                        <img src="bootstrap-icons-1.13.1/chevron-down.svg" alt="">
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse" aria-labelledby="headingOne"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        We specialize in the following services:
+                        <ul>
+                            <li><strong>Screen/Display Replacement</strong> (Original Quality Display)</li>
+                            <li><strong>Battery Replacement</strong> (High-Capacity Genuine Battery)</li>
+                            <li>Camera Repair and Lens Fix</li>
+                            <li>Charging Port Repair</li>
+                            <li>Speaker and Microphone Fix</li>
+                            <li>Water Damage Repair and Deep Cleaning</li>
+                            <li>Software Issues, Performance Boost and Virus Removal</li>
+                            <li>Mobile Protection (Screen Guard, Tempered Glass)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        <span>What is the warranty on your services?</span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse" aria-labelledby="headingTwo"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        We provide the following warranty on our repair services:
+                        <ul>
+                            <li><strong>Screen Replacement:</strong> 6 months warranty.</li>
+                            <li><strong>Battery Replacement:</strong> 1 year warranty.</li>
+                            <li><strong>Camera/Speaker/Charging Port Repair:</strong> 90 days to 6 months warranty
+                                (depending on parts).</li>
+                        </ul>
+                        We always use genuine or original quality parts.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        <span>How long does the repair take?</span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse" aria-labelledby="headingThree"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        For most common repairs like <strong>Screen Replacement</strong> and <strong>Battery
+                            Replacement</strong>, we offer <strong>same-day service</strong> or just <strong>30
+                            minutes</strong>. Water damage or complex software/motherboard issues may take longer, and
+                        you will be informed in advance.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                        <span>What is your shop location and opening hours?</span>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse" aria-labelledby="headingFour"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        <p>Our shop address is: <strong>Infront of Sai Sanjivani hospital, Rajmahal chaouk, Kawardha
+                                Chhattisgarh, India.</strong></p>
+                        <p>Our opening hours are: <strong>10 AM to 9 PM (Daily).</strong></p>
+                        <p>You can contact us on these numbers: <strong>99936-17888</strong> and
+                            <strong>97136-17888</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button" type="button" data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">
+                        <span>Do you sell new and refurbished phones?</span>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse" aria-labelledby="headingFive"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        <p>Yes! We sell both <strong>brand new</strong> and <strong>certified refurbished
+                                smartphones</strong> from top brands like Apple, Samsung, Vivo, Oppo, Realme, and
+                            more.</p>
+                        <p>All our refurbished phones come with:</p>
+                        <ul>
+                            <li>100% quality checked (40-point inspection)</li>
+                            <li>6 months warranty</li>
+                            <li>Original accessories where applicable</li>
+                            <li>Save 30-50% compared to brand new phones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button" type="button" data-target="#collapseSix" aria-expanded="false"
+                        aria-controls="collapseSix">
+                        <span>Do you use original parts for repairs?</span>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse" aria-labelledby="headingSix"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        <p>Yes, we prioritize using <strong>original and genuine parts</strong> for all repairs. When
+                            original parts are not available, we use high-quality OEM (Original Equipment Manufacturer)
+                            parts that meet the same standards.</p>
+                        <p>All parts come with a warranty to ensure quality and reliability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button" type="button" data-target="#collapseSeven" aria-expanded="false"
+                        aria-controls="collapseSeven">
+                        <span>What brands do you repair?</span>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse" aria-labelledby="headingSeven"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        We repair all major smartphone brands including:
+                        <ul>
+                            <li>Apple (iPhone)</li>
+                            <li>Samsung</li>
+                            <li>Vivo</li>
+                            <li>Oppo</li>
+                            <li>Realme</li>
+                            <li>OnePlus</li>
+                            <li>Xiaomi (Mi, Redmi, Poco)</li>
+                            <li>Motorola</li>
+                            <li>Google Pixel</li>
+                            <li>And many more!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button" type="button" data-target="#collapseEight" aria-expanded="false"
+                        aria-controls="collapseEight">
+                        <span>Can you repair water-damaged phones?</span>
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse" aria-labelledby="headingEight"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        <p>Yes, we specialize in <strong>water damage repair</strong>. The success rate depends on how
+                            quickly you bring the phone to us after water exposure.</p>
+                        <p><strong>Important tips:</strong></p>
+                        <ul>
+                            <li>Do not try to charge or turn on the phone</li>
+                            <li>Remove the SIM card and case immediately</li>
+                            <li>Bring it to us as soon as possible for professional cleaning and diagnosis</li>
+                        </ul>
+                        <p>We perform deep cleaning, corrosion removal, and component testing to restore your device.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button" type="button" data-target="#collapseNine" aria-expanded="false"
+                        aria-controls="collapseNine">
+                        <span>How much does a screen replacement cost?</span>
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse" aria-labelledby="headingNine"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        <p>Screen replacement costs vary depending on the phone model and screen type (LCD vs AMOLED).
+                        </p>
+                        <p><strong>Approximate price range:</strong></p>
+                        <ul>
+                            <li>Budget phones: ₹1,500 - ₹3,000</li>
+                            <li>Mid-range phones: ₹3,000 - ₹8,000</li>
+                            <li>Premium/Flagship phones: ₹8,000 - ₹25,000</li>
+                        </ul>
+                        <p>Contact us with your phone model for an exact quote. We offer competitive pricing with a 6
+                            months warranty on all screen replacements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button" type="button" data-target="#collapseTen" aria-expanded="false"
+                        aria-controls="collapseTen">
+                        <span>Do you offer any exchange or trade-in options?</span>
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse" aria-labelledby="headingTen"
+                    data-parent="#ramaMobileFAQ">
+                    <div class="accordion-body">
+                        <p>Yes! We offer <strong>exchange and trade-in options</strong> when you purchase a new or
+                            refurbished phone from us.</p>
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>Get instant cash value for your old phone</li>
+                            <li>Trade-in any brand, any condition</li>
+                            <li>Use trade-in value towards your new purchase</li>
+                            <li>Fast evaluation and immediate payment</li>
+                        </ul>
+                        <p>Visit our store or contact us to get a quote for your device!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Company Info</h4>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="latestSmartPhone.html">Our Stores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Legal & Policies</h4>
+                <ul>
+                    <li><a href="test1.html">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Equal Opportunity Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Support & Service</h4>
+                <ul>
+                    <li><a href="service.html">Warranty & Service</a></li>
+                    <li><a href="#">Query of Spare Parts Price</a></li>
+                    <li><a href="FAQ.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h4>Contact Details / Support</h4>
+
+                <h3>99936-17888</h3>
+                <h3>97136-17888</h3>
+
+                <p>
+                    <img src="bootstrap-icons-1.13.1/geo-alt-fill.svg" alt="location" width="16" height="16">
+                    Infront of Sai Sanjivani hospital, Rajmahal chaouk, Kawardha Chhattisgarh, India
+                </p>
+
+                <p>
+                    <img src="bootstrap-icons-1.13.1/door-open.svg" alt="hours" width="16" height="16">
+                    Shop open (10 AM - 9 PM)
+                </p>
+
+                <p>
+                    <img src="bootstrap-icons-1.13.1/envelope-arrow-up.svg" alt="email" width="16" height="16">
+                    ramamobile108@gmail.com
+                </p>
+
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+
+                    <a href="https://www.facebook.com/share/1DC6P1Srmp/" title="Facebook">
+                        <img src="bootstrap-icons-1.13.1/facebook.svg" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/rama_mobile_kawardha?utm_source=qr&igsh=cXQxMmw5cTFzbHFu"
+                        title="Instagram">
+                        <img src="bootstrap-icons-1.13.1/instagram.svg" alt="">
+                    </a>
+
+                    <a href="https://youtube.com/@_rama_mobiles_kwd_?si=mfBgsQQrAkOam96f" title="YouTube">
+                        <img src="bootstrap-icons-1.13.1/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Rama Mobile. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.menu-toggle');
+            const backdrop = document.getElementById('menuBackdrop');
+
+            menu.classList.toggle('active');
+            toggle.classList.toggle('open');
+            backdrop.classList.toggle('active');
+
+            if (menu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('navMenu');
+                const toggle = document.querySelector('.menu-toggle');
+                const backdrop = document.getElementById('menuBackdrop');
+
+                if (menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('open');
+                    backdrop.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById('navMenu');
+                const toggle = document.querySelector('.menu-toggle');
+                const backdrop = document.getElementById('menuBackdrop');
+
+                if (menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('open');
+                    backdrop.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.accordion-button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-target');
+                    const targetCollapse = document.querySelector(targetId);
+                    const isExpanded = button.classList.contains('active');
+
+                    // Close all other open accordion items
+                    document.querySelectorAll('.accordion-button.active').forEach(openButton => {
+                        if (openButton !== button) {
+                            openButton.classList.remove('active');
+                            const openTargetId = openButton.getAttribute('data-target');
+                            const openTargetCollapse = document.querySelector(openTargetId);
+                            openTargetCollapse.classList.remove('show');
+                        }
+                    });
+
+                    // Toggle the clicked accordion item
+                    if (isExpanded) {
+                        button.classList.remove('active');
+                        targetCollapse.classList.remove('show');
+                    } else {
+                        button.classList.add('active');
+                        targetCollapse.classList.add('show');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

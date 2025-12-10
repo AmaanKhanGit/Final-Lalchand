@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rama Mobile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/header-footer.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><b>Rama Mobile</b></div>
+
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="latestSmartPhone.html">LatestSmartPhone</a></li>
+                <li><a href="referbishedPhone.html">Refurbished Phone</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="menu-backdrop" id="menuBackdrop" onclick="toggleMenu()"></div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1></h1>
+            <p></p>
+            <a class="cta-button" href="latestSmartPhone.html">Explore Product</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Why Choose Rama Mobile?</h2>
+        <p>Explore our exclusive collection of latest and refurbished smartphones with guaranteed quality and best
+            prices in the market.</p>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="bootstrap-icons-1.13.1/camera-fill.svg" alt="click">
+                <h3>Quality Check</h3>
+                <p>Every phone passes a 30-point inspection by certified technicians for peak performance.</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="bootstrap-icons-1.13.1/shield-check.svg" alt="click">
+                <h3>Guaranteed Warranty</h3>
+                <p>Enjoy up to 12 months warranty on all refurbished models for complete peace of mind.</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="bootstrap-icons-1.13.1/gem.svg" alt="click">
+                <h3>Premium Quality</h3>
+                <p>Every device undergoes rigorous testing to ensure it meets our high standards.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Company Info</h4>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="latestSmartPhone.html">Our Stores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Legal & Policies</h4>
+                <ul>
+                    <li><a href="terms&condtion.html">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Support & Service</h4>
+                <ul>
+                    <li><a href="service.html">Warranty & Service</a></li>
+                    <li><a href="contactUs.html">Query of Spare Parts Price</a></li>
+                    <li><a href="FAQ.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h4>Contact Details / Support</h4>
+
+                <h3>99936-17888</h3>
+                <h3>97136-17888</h3>
+
+                <p>
+                    <img src="bootstrap-icons-1.13.1/geo-alt-fill.svg" alt="location" width="16" height="16">
+                    Infront of Sai Sanjivani hospital, Rajmahal chaouk, Kawardha Chhattisgarh, India
+                </p>
+
+                <p>
+                    <img src="bootstrap-icons-1.13.1/door-open.svg" alt="hours" width="16" height="16">
+                    Shop open (10 AM - 9 PM)
+                </p>
+
+                <p>
+                    <img src="bootstrap-icons-1.13.1/envelope-arrow-up.svg" alt="email" width="16" height="16">
+                    ramamobile108@gmail.com
+                </p>
+
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+
+                    <a href="https://www.facebook.com/share/1DC6P1Srmp/" title="Facebook">
+                        <img src="bootstrap-icons-1.13.1/facebook.svg" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/rama_mobile_kawardha?utm_source=qr&igsh=cXQxMmw5cTFzbHFu"
+                        title="Instagram">
+                        <img src="bootstrap-icons-1.13.1/instagram.svg" alt="">
+                    </a>
+
+                    <a href="https://youtube.com/@_rama_mobiles_kwd_?si=mfBgsQQrAkOam96f" title="YouTube">
+                        <img src="bootstrap-icons-1.13.1/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Rama Mobile. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Handle scroll effect on header
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Toggle mobile menu
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.menu-toggle');
+            const backdrop = document.getElementById('menuBackdrop');
+
+            menu.classList.toggle('active');
+            toggle.classList.toggle('open');
+            backdrop.classList.toggle('active');
+
+            if (menu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('navMenu');
+                const toggle = document.querySelector('.menu-toggle');
+                const backdrop = document.getElementById('menuBackdrop');
+
+                if (menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('open');
+                    backdrop.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Close menu on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById('navMenu');
+                const toggle = document.querySelector('.menu-toggle');
+                const backdrop = document.getElementById('menuBackdrop');
+
+                if (menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                    toggle.classList.remove('open');
+                    backdrop.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
