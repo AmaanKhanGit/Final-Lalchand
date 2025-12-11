@@ -26,7 +26,7 @@ a {
 ========================================*/
 
 #hero {
-    background: url("../Images/backgroundImage/vivo\ contact\ us\ bg.jpg") no-repeat center center;
+    background: url("../Images/backgroundImage/hero-image.png") no-repeat center center;
     background-size: cover;
     position: relative;
     min-height: 100vh;
