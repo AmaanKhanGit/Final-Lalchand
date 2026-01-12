@@ -47,7 +47,8 @@ nav {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     transition: color 0.3s;
     position: relative;
 }
@@ -173,6 +174,7 @@ footer {
 .footer-column ul li a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
