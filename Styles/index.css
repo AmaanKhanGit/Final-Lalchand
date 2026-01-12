@@ -183,5 +183,6 @@ a {
 
     #hero {
         justify-content: center;
+        min-height: 70vh;
     }
 }
